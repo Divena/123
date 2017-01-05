@@ -1,0 +1,13 @@
+<div class="container">
+    <form name="SearchForm" class="form-horizontal">
+        <div class="jumbotron">
+                <p>[[status]]</p>
+                <input ng-model="what_search" class="form-control">
+                <p><a class="btn" ng-click="Submit(SearchForm)">Search</a></p>
+                <div ng-repeat="a in answer">
+                    <p><a href="[[a.url]]">[[a.name]]</a></br>
+                    <a href="[[a.url]]" style="color: #8c8c8c; font-size: 20px">[[a.url]]</a></p>
+                </div>
+        </div>
+    </form>
+</div>
